@@ -1,13 +1,22 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080; // Keep either 8080 or 3000, not both
 
+// Serve static files
 app.use(express.static('public'));
 
+// Serve routes for yoga app
+app.use('/classes', require('./routes/classes'));
+app.use('/poses', require('./routes/poses'));
+app.use('/schedule', require('./routes/schedule'));
+
+// Root route
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Yoga site running on port ${port}`);
+// Start server
+app.listen(PORT, () => {
+  console.log(`Yoga site running on port ${PORT}`);
 });
