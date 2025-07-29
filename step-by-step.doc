@@ -1,0 +1,70 @@
+---bash
+mkdir yoga-webapp
+cd yoga-webapp
+npm init -y
+npm install express
+---
+--- server.js
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/views/index.html');
+});
+
+app.listen(port, () => {
+  console.log(`Yoga site running on port ${port}`);
+});
+---
+---Folder structure
+yoga-webapp/
+├── public/
+│   └── style.css
+├── views/
+│   └── index.html
+├── server.js
+---
+---view/index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoga Studio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome to Azure Yoga</h1>
+  <p>Balance your body and mind.</p>
+</body>
+</html>
+---
+--- public/style.css
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 2rem;
+}
+h1 {
+  color: #2e8b57;
+}
+---
+---push code to git hub 
+git init
+git add .
+git commit -m "Initial yoga site"
+git remote add origin https://github.com/yourusername/yoga-webapp.git
+git push -u origin main
+---
+--- Deploy to azure
+az login
+az group create --name yogaGroup --location "Central India"
+az appservice plan create --name yogaPlan --resource-group yogaGroup --sku FREE
+az webapp create --name yogaWebApp --resource-group yogaGroup --plan yogaPlan --runtime "NODE|18-lts"
+az webapp deployment source config --name yogaWebApp --resource-group yogaGroup --repo-url https://github.com/yourusername/yoga-webapp --branch main --manual-integration
+---
+--- visit Website 
+https://yogaWebApp.azurewebsites.net
+---
