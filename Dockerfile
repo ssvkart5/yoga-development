@@ -2,7 +2,8 @@
 FROM node:22
 
 # Set working directory inside the container
-WORKDIR /app
+WORKDIR /home/site/wwwroot
+
 
 # Copy your app files into the container
 COPY . .
