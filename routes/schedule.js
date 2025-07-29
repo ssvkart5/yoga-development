@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const schedules = require('../data/schedule.json');
+const schedule = require('../data/schedule.json');
 
 router.get('/', (req, res) => {
-  res.json(schedules);
+  res.json(schedule);
 });
 
 module.exports = router;
