@@ -8,7 +8,7 @@ body {
 .hero {
   background-image: url('/images/urdwanamaskar.jpg');
   background-size: cover;
-  text-align: top;
+  text-align: calc();
   padding: 4rem 2rem;
   color: black;
 }
