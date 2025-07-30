@@ -6,9 +6,9 @@ body {
 }
 
 .hero {
-  background-image: url('/images/urdwanamaskar.jpg');
-  background-size: max(100%, 100%);
-  text-align: calc();
+  background-image: url('/images/yoga-hero.jpg');
+  background-size: cover;
+  text-align: center;
   padding: 4rem 2rem;
   color: black;
 }
