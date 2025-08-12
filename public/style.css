@@ -134,14 +134,14 @@ video {
   color: #0078D4; /* Azure blue */
 }
 .full-image-section {
-  width: 100%;
+  width: 60%;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 .full-image-section img {
-  width: 60%;
+  width: 40%;
   height: auto%;
   display: block;
 }
