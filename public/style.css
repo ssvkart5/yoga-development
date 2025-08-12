@@ -113,6 +113,26 @@ video {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #0078D4; /* Azure blue */
+}
 
 
   
