@@ -133,6 +133,25 @@ video {
 .main-nav a:hover {
   color: #0078D4; /* Azure blue */
 }
+.full-image-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.full-image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.center-line {
+  width: 60%;
+  margin: 2rem auto;
+  border: none;
+  border-top: 2px solid #ccc;
+}
 
 
   
