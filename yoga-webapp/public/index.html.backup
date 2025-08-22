@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SuViHaSa Yoga Studio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome to SuViHaSa Yoga</h1>
+  <p>we believe that balance isn't just a goal — it's a way of living. Whether you're a curious beginner or a seasoned yogi, our platform is designed to guide your practice with purpose, mindfulness, and ease</p>
+  <p>We blend tradition with technology to bring yoga to your screen, anytime and anywhere. Find your flow. Breathe. Become.</p>   
+  </body>
+  <nav>
+  <a href="/classes.html">Classes</a> |
+  <a href="/poses.html">Poses</a> |
+  <a href="/schedule.html">Schedule</a>
+  </nav>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Yoga Classes</title></head>
+<body>
+  <h1>Our Classes</h1>
+  <ul id="classList"></ul>
+  <script>
+    fetch('/classes')
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('classList');
+        data.forEach(cls => {
+          const item = document.createElement('li');
+          item.textContent = `${cls.name} - ${cls.level} (${cls.duration})`;
+          list.appendChild(item);
+        });
+      });
+  </script>
+</body>
+</html>

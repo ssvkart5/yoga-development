@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SuViHaSa Yoga</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Find Your Flow</h1>
+    <p>Premium yoga classes for every body and every goal.</p>
+    <a href="/classes.html" class="cta-button">Explore Classes</a>
+  </header>
+
+  <nav class="main-nav">
+    <a href="/index.html">Home</a>
+    <a href="/classes.html">Classes</a>
+    <a href="/poses.html">Poses</a>
+    <a href="/schedule.html">Schedule</a>
+  </nav>
+  <video width="640" height="360" controls>
+    <source src="/videos/demo-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <section class="features">
+    <div>
+      <h2>On-Demand Library</h2>
+      <p>Access yoga videos anytime, anywhere.</p>
+    </div>
+    <div>
+      <h2>Expert Instructors</h2>
+      <p>Practice with certified professionals.</p>
+    </div>
+    <div>
+      <h2>Personalized Plans</h2>
+      <p>Build a routine that fits your life.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SuViHaSa Yoga. All rights reserved.</p>
+  </footer>
+</body>
+</html>
