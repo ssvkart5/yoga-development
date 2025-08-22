@@ -39,3 +39,8 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 // Load environment variables
 require('dotenv').config();
+
+// Basic route to check server status
+app.get('/', (req, res) => {
+  res.send('🧘‍♂️ Yoga server is up and running!');
+});
