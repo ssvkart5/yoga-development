@@ -1,20 +1,25 @@
 {
   "name": "yoga-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A wellness-focused yoga web app with user authentication and interactive features.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["yoga", "wellness", "express", "mongodb", "authentication"],
+  "author": "ssvkart",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^7.6.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "jest": "^30.0.5"
+    "jest": "^30.0.5",
+    "supertest": "^6.3.3"
   }
 }
